@@ -9,7 +9,7 @@ x -= flySpeed
 y += yMov
 //on destroy
 if durability == 0{
-	obj_control.score++
+	global.score++
 	if astType == 1{
 		temp = instance_create_depth(x, y, -10000, obj_asteroidS, {
 			yMov: 1

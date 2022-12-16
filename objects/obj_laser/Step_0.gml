@@ -1,10 +1,17 @@
 /// @description movement and collision
 x += 10
 
-isShot = instance_place(x, y, obj_asteroidM)
+astShot = instance_place(x, y, obj_asteroidM)
 
-if isShot != noone{
-	show_debug_message("I've been hit")
+if astShot != noone{
 	instance_destroy(self.id)
-	isShot.durability -= 1
+	astShot.durability -= 1
+}
+
+//drones
+droneShot = instance_place(x, y, obj_drone)
+
+if droneShot != noone{
+	instance_destroy(droneShot.id)
+	instance_destroy(self.id)
 }

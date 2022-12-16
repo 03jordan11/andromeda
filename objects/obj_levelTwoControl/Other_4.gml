@@ -7,7 +7,8 @@ secondText = "You notice 2 small drones approach you and stop, seemingly scannin
 
 obj_textBox.textToShow = firstText
 //spawnCircularDrones()
-spawnSinDrones()
+
+//spawnSinDrones()
 
 
 

@@ -34,7 +34,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"astType","path":"objects/obj_asteroidM/obj_asteroidM.yy",},"objectId":{"name":"obj_asteroidM","path":"objects/obj_asteroidM/obj_asteroidM.yy",},"value":"0",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "enemies",
+    "path": "folders/Objects/enemies.yy",
   },
 }

@@ -25,7 +25,8 @@ if(vx != 0 || vy != 0){
 	}
 }
 
-asteroidCollision = collision_rectangle(x-lookRange, y-lookRange, x+lookRange, y+lookRange, obj_asteroidM, false, true)
+asteroidCollision = instance_place(x, y, obj_asteroidM)
+droneCollision = instance_place(x, y, obj_drone)
 
 if asteroidCollision {
 	obj_textBox.textToShow = "Game Over"
@@ -33,17 +34,11 @@ if asteroidCollision {
 	audio_pause_all()
 	audio_play_sound(explosion, 1, false)
 }
+if droneCollision {
+	obj_textBox.textToShow = "Game Over"
+	instance_destroy(self.id)
+	audio_pause_all()
+	audio_play_sound(explosion, 1, false)
+}
 
-//if nearby{
-//	if (!alarmOn){
-//		audio_play_sound(proxAlarm, 1, true)
-//		alarmOn = true
-//	}
-//}
-//else{
-//	if(alarmOn){
-//		audio_stop_sound(proxAlarm)
-//		alarmOn = false
-//	}
-//}
 

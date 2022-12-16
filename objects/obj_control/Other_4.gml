@@ -1,6 +1,7 @@
 /// @description Initialize music
 
 // play music based on room
+global.score = 0
 
 switch room{
 	case rm_gameMain: {

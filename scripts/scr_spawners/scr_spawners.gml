@@ -52,13 +52,48 @@ function spawnSinDrones(){
 	position = []
 	period = spacing*9
 	
-	for (var i = 0; i < period; i += period/9){
-		
-		xVal = xOrig + i
-		yVal = sin(i*2*(pi/period)) * mag + yOrig
-		instance_create_depth(xVal, yVal, -10000, obj_drone)
+	top = yOrig - mag
+	bot = yOrig + mag
+	mid = mag/2
+	
+	spawnHorDrones(9)
+	//spawnVertDrones(9)
+}
 
+function spawnHorDrones(num){
+	xOrig = 960+64
+	yOrig = irandom_range(64, 540-180)
+	spacing = 64
+	for(var i = 0; i < num; i++){
+		instance_create_depth(xOrig + spacing*i, yOrig, -10000, obj_drone, {
+			horSpeed: 1,
+			spawnOrder: i
+		})
 	}
+}
 
+function spawnVertDrones(num){
+	xOrig = 210
+	yOrig = 32
+	spacing = 64
+	for(var i = 0; i < num; i++){
+		instance_create_depth(xOrig, yOrig + spacing * i, -10000, obj_drone, {
+			horSpeed: 4
+		})		
+	}
+}
 
+function sine_wave(time, period, amp, mid){
+	return sin(time * 2 * pi / period) * amp + mid
+}
+
+function spawnScriptedDrones(){
+	instance_create_depth(960+64, 64, -10000, obj_drone, {
+			horSpeed: 2,
+			type: "script"
+		})
+	instance_create_depth(960+64, 540-64, -10000, obj_drone, {
+			horSpeed: 2,
+			type: "script"
+		})		
 }
