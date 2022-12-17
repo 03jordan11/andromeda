@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_player",
   "spriteId": {
-    "name": "shuttle",
-    "path": "sprites/shuttle/shuttle.yy",
+    "name": "spr_shuttle",
+    "path": "sprites/spr_shuttle/spr_shuttle.yy",
   },
   "solid": false,
   "visible": true,

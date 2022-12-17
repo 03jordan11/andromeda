@@ -30,17 +30,23 @@ function spawnCircularDrones(){
 	xOrig = 960+64
 	yOrig = irandom_range(64+SPRITE_SIZE, 540 - MAX_RADIUS - SPRITE_SIZE)
 	
-	instance_create_depth(xOrig, yOrig + radius, -10000, obj_drone)
-	instance_create_depth(xOrig, yOrig - radius, -10000, obj_drone)
-	instance_create_depth(xOrig + radius, yOrig, -10000, obj_drone)
-	instance_create_depth(xOrig - radius, yOrig, -10000, obj_drone)
+	droneChar = 
+	{
+		type: "circle",
+		horSpeed: irandom_range(3, 7)
+	}
+	
+	instance_create_depth(xOrig, yOrig + radius, -10000, obj_drone, droneChar)
+	instance_create_depth(xOrig, yOrig - radius, -10000, obj_drone, droneChar)
+	instance_create_depth(xOrig + radius, yOrig, -10000, obj_drone, droneChar)
+	instance_create_depth(xOrig - radius, yOrig, -10000, obj_drone, droneChar)
 	//if the radius is above the midpoint, spawn more in the circle
 	if (radius > MID_RADIUS){
 		rad = ANGLE_VALUE * radius
-		instance_create_depth(xOrig + rad, yOrig + rad, -10000, obj_drone)
-		instance_create_depth(xOrig + rad, yOrig - rad, -10000, obj_drone)
-		instance_create_depth(xOrig - rad, yOrig + rad, -10000, obj_drone)
-		instance_create_depth(xOrig - rad, yOrig - rad, -10000, obj_drone)
+		instance_create_depth(xOrig + rad, yOrig + rad, -10000, obj_drone, droneChar)
+		instance_create_depth(xOrig + rad, yOrig - rad, -10000, obj_drone, droneChar)
+		instance_create_depth(xOrig - rad, yOrig + rad, -10000, obj_drone, droneChar)
+		instance_create_depth(xOrig - rad, yOrig - rad, -10000, obj_drone, droneChar)
 	}
 }
 

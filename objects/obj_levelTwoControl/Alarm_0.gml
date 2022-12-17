@@ -1,4 +1,10 @@
 /// @description spawn drone
 
-spawnHorDrones(6)
+if flippingSwitch{
+	spawnHorDrones(6)
+	flippingSwitch = false
+}else{
+	spawnCircularDrones()
+	flippingSwitch = true
+}
 

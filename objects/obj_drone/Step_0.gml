@@ -1,6 +1,15 @@
 /// @description controlling movement
 
-//y = sin(current_time * 2 * pi / 1000) * 64 + 200
+//animating blinking
+if image_index == image_number && alarm[0] == -1{
+	//stop animating
+	image_speed = 0
+	//start it again at a random time
+	randomize()
+	hangTime = irandom_range(30,360)
+	alarm[0] = hangTime
+}
+
 
 
 if type == "script"{
@@ -10,6 +19,9 @@ if type == "script"{
 }
 else if type == "dismiss drone"{
 	x += horSpeed
+}
+else if type == "circle"{
+	x -= horSpeed
 }
 else{
 	x -= horSpeed
