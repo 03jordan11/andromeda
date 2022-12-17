@@ -61,13 +61,17 @@ function spawnSinDrones(){
 }
 
 function spawnHorDrones(num){
+	randomize()
 	xOrig = 960+64
 	yOrig = irandom_range(64, 540-180)
 	spacing = 64
+	
+	droneSpeed = irandom_range(3, 7)
 	for(var i = 0; i < num; i++){
 		instance_create_depth(xOrig + spacing*i, yOrig, -10000, obj_drone, {
-			horSpeed: 1,
-			spawnOrder: i
+			horSpeed: droneSpeed,
+			spawnOrder: i,
+			initialY: yOrig
 		})
 	}
 }

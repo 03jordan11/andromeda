@@ -13,7 +13,7 @@ else if type == "dismiss drone"{
 }
 else{
 	x -= horSpeed
-	y = sine_wave((current_time-(spawnOrder*200))/1000, 1, 64, 200)
+	y = sine_wave((current_time-(spawnOrder*200))/1000, 1, 64, initialY)
 }
 
 
