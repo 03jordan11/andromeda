@@ -17,6 +17,20 @@ function spawnAsteroid(){
 	}
 }
 
+///@function fighterShoot()
+function fighterShoot(xPos, yPos){
+	instance_create_depth(xPos, yPos, -10000, obj_enemy_laser)
+}
+
+///@function spawnFighter()
+function spawnFighter(){
+	randomize()
+	
+	xPos = 960 + 64
+	yPos = irandom_range(64, 540-64)
+	instance_create_depth(xPos, yPos, -10001, obj_fighter)
+}
+
 //@function spawnDrones()
 function spawnCircularDrones(){
 	randomize()

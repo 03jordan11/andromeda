@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_laser",
+  "name": "obj_enemy_laser",
   "spriteId": {
-    "name": "spr_enemly_laser_strip3",
-    "path": "sprites/spr_enemly_laser_strip3/spr_enemly_laser_strip3.yy",
+    "name": "spr_laser",
+    "path": "sprites/spr_laser/spr_laser.yy",
   },
   "solid": false,
   "visible": true,

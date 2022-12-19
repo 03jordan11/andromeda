@@ -27,6 +27,8 @@ if(vx != 0 || vy != 0){
 
 asteroidCollision = instance_place(x, y, obj_asteroidM)
 droneCollision = instance_place(x, y, obj_drone)
+fighterCollision = instance_place(x, y, obj_fighter)
+shot = instance_place(x, y, obj_enemy_laser)
 
 if asteroidCollision {
 	obj_textBox.textToShow = "Game Over"
@@ -40,5 +42,17 @@ if droneCollision {
 	audio_pause_all()
 	audio_play_sound(explosion, 1, false)
 }
-
-
+if fighterCollision {
+	obj_textBox.textToShow = "Game Over"
+	instance_destroy(self.id)
+	instance_destroy(fighterCollision.id)
+	audio_pause_all()
+	audio_play_sound(explosion, 1, false)
+}
+if shot {
+	obj_textBox.textToShow = "Game Over"
+	instance_destroy(self.id)
+	instance_destroy(shot.id)
+	audio_pause_all()
+	audio_play_sound(explosion, 1, false)
+}

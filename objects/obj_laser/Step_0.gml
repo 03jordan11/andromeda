@@ -16,3 +16,11 @@ if droneShot != noone{
 	instance_destroy(droneShot.id)
 	instance_destroy(self.id)
 }
+
+//fighters
+fighterShot = instance_place(x, y, obj_fighter)
+if fighterShot != noone{
+	global.score++
+	instance_destroy(fighterShot.id)
+	instance_destroy(self.id)
+}
