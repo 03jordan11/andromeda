@@ -5,6 +5,7 @@
 obj_textBox.textToShow = ""
 
 obj_levelThreeControl.gameStart = true
+activatePlayer()
 
 instance_destroy(self.id)
 

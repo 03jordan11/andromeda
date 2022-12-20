@@ -5,10 +5,11 @@ vertFlySpeed = 6;
 vx = 0;
 vy = 0;
 
-nearby = noone
-lookRange = 2
+playerHealth = 3
 
-alarmOn = false;
+
+
+
 
 
 

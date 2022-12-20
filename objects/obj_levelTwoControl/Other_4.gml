@@ -6,9 +6,7 @@ firstText = "As you finish the first leg of your trip you notice signatures of m
 secondText = "You notice 2 small drones approach you and stop, seemingly scanning for who and what you are. You flip a switch on your control board that emits a small wave of energy that has come to mean friend amongst space-farers. The drones do not reciprocate."
 
 obj_textBox.textToShow = firstText
-//spawnCircularDrones()
 
-//spawnSinDrones()
 
 
 

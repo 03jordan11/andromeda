@@ -3,6 +3,7 @@
 
 //set some variable to true that starts the game
 obj_asteroidSpawner.gameStart = true
+activatePlayer()
 obj_textBox.textToShow = ""
 instance_destroy(self.id)
 
