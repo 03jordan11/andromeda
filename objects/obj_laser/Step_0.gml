@@ -13,6 +13,7 @@ droneShot = instance_place(x, y, obj_drone)
 
 if droneShot != noone{
 	global.score++
+	audio_play_sound(enemyExplosion,1,false)
 	instance_destroy(droneShot.id)
 	instance_destroy(self.id)
 }
@@ -21,6 +22,7 @@ if droneShot != noone{
 fighterShot = instance_place(x, y, obj_fighter)
 if fighterShot != noone{
 	global.score++
+	audio_play_sound(enemyExplosion,1,false)
 	instance_destroy(fighterShot.id)
 	instance_destroy(self.id)
 }

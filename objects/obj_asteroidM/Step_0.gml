@@ -26,5 +26,6 @@ if durability == 0{
 			yMov: -1
 		})
 	}
+	audio_play_sound(enemyExplosion,1,false)
 	instance_destroy(self.id)
 }

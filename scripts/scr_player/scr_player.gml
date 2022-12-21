@@ -15,7 +15,9 @@ function takeDamage(){
 		audio_play_sound(explosion, 1, false)
 	}
 	else{
+		audio_play_sound(damageTaken,1,false)
 		obj_player.isInvulnerable = true
 	}
+	
 	//do flashing animate, and disable to 
 }
