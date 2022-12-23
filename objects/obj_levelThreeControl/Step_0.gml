@@ -19,5 +19,5 @@ if global.score >= 10{
 	global.score = 0
 	audio_sound_gain(bkgSoundId, 0, 1200)
 	obj_textBox.textToShow = "You Win"
-	room_goto_next()
+	transitionStart(rm_level_4, sq_FadeOut, sq_FadeIn)
 }

@@ -4,7 +4,7 @@ if global.score >= 4{
 	obj_asteroidSpawner.gameStart = false
 	obj_textBox.textToShow= "You Win"
 	global.score = 0
-	room_goto_next()
+	transitionStart(rm_level_2, sq_FadeOut, sq_FadeIn)
 }
 
 
