@@ -27,12 +27,21 @@ function takeDamage(){
 
 function spawnHearts(){
 	if obj_player.playerHealth == 2{
-		instance_destroy(obj_heart3)
+		obj_heart1.image_alpha = 0
 	}
 	if obj_player.playerHealth == 1{
-		instance_destroy(obj_heart2)
+		obj_heart2.image_alpha = 0
 	}
 	if obj_player.playerHealth == 0{
-		instance_destroy(obj_heart1)	
+		obj_heart3.image_alpha = 0	
+	}
+}
+
+function regenHeart(){
+	if obj_player.playerHealth == 2{
+		obj_heart1.image_alpha = 1
+	}
+	else if obj_player.playerHealth == 1{
+		obj_heart2.image_alpha = 1
 	}
 }
