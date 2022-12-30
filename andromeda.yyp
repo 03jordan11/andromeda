@@ -55,6 +55,7 @@
     {"id":{"name":"sq_FadeIn","path":"sequences/sq_FadeIn/sq_FadeIn.yy",},"order":1,},
     {"id":{"name":"spr_enemy_ship","path":"sprites/spr_enemy_ship/spr_enemy_ship.yy",},"order":9,},
     {"id":{"name":"spr_enemly_laser_strip3","path":"sprites/spr_enemly_laser_strip3/spr_enemly_laser_strip3.yy",},"order":8,},
+    {"id":{"name":"obj_lvlFourArrow","path":"objects/obj_lvlFourArrow/obj_lvlFourArrow.yy",},"order":12,},
     {"id":{"name":"proxAlarm","path":"sounds/proxAlarm/proxAlarm.yy",},"order":1,},
     {"id":{"name":"obj_asteroidS","path":"objects/obj_asteroidS/obj_asteroidS.yy",},"order":2,},
     {"id":{"name":"obj_heart1","path":"objects/obj_heart1/obj_heart1.yy",},"order":11,},

@@ -4,7 +4,7 @@
 global.score = 0
 
 bkgSoundId = audio_play_sound(space,1,true);
-firstText = "After the drones die down you face one of the longest silences of your trip. For the next 1.1 million years you float through space without any interaction with foreign matter. It is just you and your ship. Luckily, human brain interfaces allow you to enjoy any type of reality, no matter where you are in the universe. At a thought, you command your neurons to form a reality where you are a quiet farmer with a loving family, a fearsome warrior in some ancient time, or any other reality you can create or have downloaded from the mega computer. Eventually, your systems indicate an asteroid field ahead, but you notice the signatures being out of the ordinary."
+firstText = "A sensor you sent out thousands of years before you started your trip relays a signal. Once the signal is decoded you realize it has identified a planet that may possibly have a breathable atmosphere and hospitable environment. You plot a course for the system, knowing that more enemies lie ahead."
 
 obj_textBox.textToShow = firstText
 
