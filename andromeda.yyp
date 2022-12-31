@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"spr_asteroidS","path":"sprites/spr_asteroidS/spr_asteroidS.yy",},"order":2,},
     {"id":{"name":"obj_asteroidSpawner","path":"objects/obj_asteroidSpawner/obj_asteroidSpawner.yy",},"order":0,},
+    {"id":{"name":"spr_armorPU","path":"sprites/spr_armorPU/spr_armorPU.yy",},"order":2,},
     {"id":{"name":"space","path":"sounds/space/space.yy",},"order":0,},
     {"id":{"name":"obj_par_boundary","path":"objects/obj_par_boundary/obj_par_boundary.yy",},"order":1,},
     {"id":{"name":"sq_FadeOut","path":"sequences/sq_FadeOut/sq_FadeOut.yy",},"order":0,},
@@ -27,6 +28,7 @@
     {"id":{"name":"spr_asteroidL","path":"sprites/spr_asteroidL/spr_asteroidL.yy",},"order":1,},
     {"id":{"name":"spr_nextArrow","path":"sprites/spr_nextArrow/spr_nextArrow.yy",},"order":0,},
     {"id":{"name":"spr_shuttle","path":"sprites/spr_shuttle/spr_shuttle.yy",},"order":1,},
+    {"id":{"name":"obj_armorPU","path":"objects/obj_armorPU/obj_armorPU.yy",},"order":2,},
     {"id":{"name":"obj_heart2","path":"objects/obj_heart2/obj_heart2.yy",},"order":10,},
     {"id":{"name":"scr_powerUp","path":"scripts/scr_powerUp/scr_powerUp.yy",},"order":3,},
     {"id":{"name":"spr_drone","path":"sprites/spr_drone/spr_drone.yy",},"order":6,},

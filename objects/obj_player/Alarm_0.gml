@@ -8,7 +8,7 @@ else{
 	image_alpha = 1
 }
 
-if counter == 7{
+if counter == maxCounter{
 	image_alpha = 1
 	counter = 0
 	isInvulnerable = false
