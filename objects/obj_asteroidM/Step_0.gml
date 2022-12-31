@@ -27,6 +27,6 @@ if durability == 0{
 		})
 	}
 	audio_play_sound(enemyExplosion,1,false)
-	instance_create_depth(x, y, -10005, obj_healthPU)
+	instance_create_depth(x, y, -10005, obj_shootPU)
 	instance_destroy(self.id)
 }
