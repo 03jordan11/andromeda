@@ -27,6 +27,9 @@ if durability == 0{
 		})
 	}
 	audio_play_sound(enemyExplosion,1,false)
-	instance_create_depth(x, y, -10005, obj_armorPU)
+	if obj_player.playerHealth < 3{
+		createHealthPowerup(x, y)
+	}
+	//instance_create_depth(x, y, -10005, obj_armorPU)
 	instance_destroy(self.id)
 }

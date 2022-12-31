@@ -3,4 +3,4 @@
 textWidth = 650;
 lineHeight = 32
 
-image_alpha = 0;
+image_alpha = 0.5;

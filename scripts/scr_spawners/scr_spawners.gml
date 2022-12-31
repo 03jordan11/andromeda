@@ -116,7 +116,7 @@ function spawnScriptedDrones(){
 			horSpeed: 2,
 			type: "script"
 		})
-	instance_create_depth(960+64, 540-64, -10000, obj_drone, {
+	instance_create_depth(960+64, 540-128, -10000, obj_drone, {
 			horSpeed: 2,
 			type: "script"
 		})		
