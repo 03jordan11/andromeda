@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_heart3",
   "spriteId": {
-    "name": "spr_heart",
-    "path": "sprites/spr_heart/spr_heart.yy",
+    "name": "spr_health",
+    "path": "sprites/spr_health/spr_health.yy",
   },
   "solid": false,
   "visible": true,

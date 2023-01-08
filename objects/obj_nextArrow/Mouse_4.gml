@@ -2,10 +2,9 @@
 
 
 //set some variable to true that starts the game
-obj_textBox.image_alpha = 0
+instance_destroy(obj_storyTextbox)
 obj_asteroidSpawner.gameStart = true
 activatePlayer()
-obj_textBox.textToShow = ""
 instance_destroy(self.id)
 
 

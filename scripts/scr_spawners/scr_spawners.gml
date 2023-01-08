@@ -121,3 +121,39 @@ function spawnScriptedDrones(){
 			type: "script"
 		})		
 }
+
+function spawnText(text, roomRef){
+	switch roomRef{
+		case 1: {
+			instance_create_depth(244, 96, 1, obj_storyTextbox, {
+				textToShow: text
+			})
+			instance_create_depth(736, 416, 0, obj_nextArrow)
+		};break;
+		case 2: {
+			instance_create_depth(244, 96, 1, obj_storyTextbox, {
+				textToShow: text
+			})
+			instance_create_depth(736, 416, 0, obj_nextArrowLvlTwo)
+		}break;
+		case 2.1: {
+			instance_create_depth(244, 96, 1, obj_storyTextbox, {
+				textToShow: text
+			})
+			instance_create_depth(736, 416, 0, obj_droneArrow)		
+		}break;
+		case 3: {
+			instance_create_depth(244, 96, 1, obj_storyTextbox, {
+				textToShow: text
+			})
+			instance_create_depth(736, 416, 0, obj_lvlThreeArrow)		
+		}break;
+		case 4: {
+			instance_create_depth(244, 96, 1, obj_storyTextbox, {
+				textToShow: text
+			})
+			instance_create_depth(736, 416, 0, obj_lvlFourArrow)				
+		}
+	}
+	
+}

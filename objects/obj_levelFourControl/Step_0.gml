@@ -11,11 +11,11 @@ if (alarm[0] == -1 && gameStart){
 	
 }
 if (alarm[1] == -1 && gameStart){
-	alarm[1] = 60
+	alarm[1] = 180
 }
 
 
-if global.score >= 10{
+if global.score >= 35{
 	global.score = 0
 	audio_sound_gain(bkgSoundId, 0, 1200)
 	obj_textBox.textToShow = "You Win"

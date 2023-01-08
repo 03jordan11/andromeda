@@ -8,7 +8,8 @@ global.healthSpawnTime = 0
 global.score = 0
 global.shootSpawnTime = 0
 global.armorSpawnTime = 0
-obj_textBox.textToShow = firstText
+
+spawnText(firstText, 2)
 
 
 

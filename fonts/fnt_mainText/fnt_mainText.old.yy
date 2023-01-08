@@ -10,7 +10,7 @@
   "fontName": "Consolas",
   "styleName": "Regular",
   "size": 16.0,
-  "bold": false,
+  "bold": true,
   "italic": false,
   "charset": 0,
   "AntiAlias": 0,
