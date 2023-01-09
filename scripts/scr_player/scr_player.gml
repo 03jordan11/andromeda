@@ -45,3 +45,20 @@ function regenHeart(){
 		obj_heart2.image_alpha = 1
 	}
 }
+
+function levelOverScript(roomRef){
+	if (point_distance(obj_player.x, obj_player.y, obj_player.origX, obj_player.origY) > 2){
+		move_towards_point(obj_player.origX, obj_player.origY, 6)
+	}
+	else{
+		obj_player.speed = 0
+		if(roomRef.alarm[1] == -1){
+			//start transition
+			roomRef.alarm[1] = 250
+			//
+			roomRef.alarm[3] = 30
+		}
+		
+
+	}
+}

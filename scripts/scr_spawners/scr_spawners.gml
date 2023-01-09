@@ -157,3 +157,14 @@ function spawnText(text, roomRef){
 	}
 	
 }
+
+function destroyAllEnemies(){
+	instance_destroy(obj_asteroidM)
+	instance_destroy(obj_drone)
+	instance_destroy(obj_fighter)
+}
+
+function stopAsteroidsLvl1(){
+	obj_asteroidSpawner.alarm[0] = -1
+	obj_asteroidSpawner.gameStart = false
+}

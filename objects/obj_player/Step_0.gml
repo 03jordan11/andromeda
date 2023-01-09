@@ -1,12 +1,12 @@
 /// @description player step
 if levelOver{
-	if (point_distance(x, y, origX, origY) > 2){
+	
+	if (point_distance(x, y, origX, origY) > 5){
 		move_towards_point(origX, origY, 6)
 	}
 	else{
 		speed = 0
-		if(obj_control.alarm[1] == -1){
-			obj_control.alarm[1] = 250
+		if(obj_control.alarm[3] == -1){
 			obj_control.alarm[3] = 30
 		}
 	}

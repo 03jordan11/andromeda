@@ -26,10 +26,19 @@ function transitionStart(roomTarget, typeOut, typeIn){
 }
 
 function transitionChangeRoom(){
-	room_goto(global.roomTarget)
+	room_goto_next()
+	//room_goto(global.roomTarget)
 }
 
 function transitionFinished(){
 	layer_sequence_destroy(self.elementID)
 	global.midTransition = false
+}
+
+function endRoomTransition(rmTarget){
+	instance_destroy(obj_player)
+	layer_sequence_create("Instances", 0, -10, sq_shipEnd)
+	layer_set_target_room(rmTarget)
+	layer_sequence_create("Instances", 0, 0, sq_FadeIn)
+	layer_reset_target_room()
 }

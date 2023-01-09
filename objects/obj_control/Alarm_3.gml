@@ -1,6 +1,7 @@
-/// @description Insert description here
+/// @description player hyperdrive sound
 // You can write your code in this editor
-audio_play_sound(hyperdrive, 1, false)
+endRoomTransition(rm_level_2)
+
 
 
 
