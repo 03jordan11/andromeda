@@ -1,6 +1,17 @@
 /// @description player step
-
-if canMove{
+if levelOver{
+	if (point_distance(x, y, origX, origY) > 2){
+		move_towards_point(origX, origY, 6)
+	}
+	else{
+		speed = 0
+		if(obj_control.alarm[1] == -1){
+			obj_control.alarm[1] = 250
+			obj_control.alarm[3] = 30
+		}
+	}
+}
+else if canMove{
 	//check keys for movement
 	moveRight = keyboard_check(ord("D"));
 	moveLeft = keyboard_check(ord("A"));

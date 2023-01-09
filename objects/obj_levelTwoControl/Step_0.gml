@@ -20,7 +20,7 @@ if (alarm[2] == -1 && !droneTrigger && gameStart && spawnAsteroids){
 	alarm[2] = 160
 }
 
-if global.score >= 20{
+if global.score >= 1{
 	global.score = 0
 	audio_sound_gain(bkgSoundId, 0, 1200)
 	transitionStart(rm_level_3, sq_FadeOut, sq_FadeIn)
