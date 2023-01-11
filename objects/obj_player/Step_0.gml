@@ -6,8 +6,8 @@ if levelOver{
 	}
 	else{
 		speed = 0
-		if(obj_control.alarm[3] == -1){
-			obj_control.alarm[3] = 30
+		if(self.currentControl.alarm[3] == -1){
+			self.currentControl.alarm[3] = 30
 		}
 	}
 }

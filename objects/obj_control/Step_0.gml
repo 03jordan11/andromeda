@@ -4,7 +4,8 @@ if global.score >= 1{
 	global.score = 0
 	stopAsteroidsLvl1()
 	destroyAllEnemies()
-	levelOverScript(obj_control)
+	//levelOverScript(obj_control)
+	obj_player.currentControl = obj_control
 	obj_player.levelOver = true
 }
 

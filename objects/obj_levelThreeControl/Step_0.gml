@@ -18,5 +18,9 @@ if (alarm[1] == -1 && gameStart){
 if global.score >= 1{
 	global.score = 0
 	audio_sound_gain(bkgSoundId, 0, 1200)
-	transitionStart(rm_level_4, sq_FadeOut, sq_FadeIn)
+	gameStart = false
+	cancelAllAlarms(self)
+	destroyAllEnemies()
+	obj_player.currentControl = obj_levelThreeControl
+	obj_player.levelOver = true
 }

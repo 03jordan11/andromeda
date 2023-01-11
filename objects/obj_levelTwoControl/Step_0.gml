@@ -23,5 +23,10 @@ if (alarm[2] == -1 && !droneTrigger && gameStart && spawnAsteroids){
 if global.score >= 1{
 	global.score = 0
 	audio_sound_gain(bkgSoundId, 0, 1200)
-	transitionStart(rm_level_3, sq_FadeOut, sq_FadeIn)
+	cancelAllAlarms(self)
+	destroyAllEnemies()
+	gameStart = false
+	obj_player.currentControl = obj_levelTwoControl
+	obj_player.levelOver = true
+	//transitionStart(rm_level_3, sq_FadeOut, sq_FadeIn)
 }

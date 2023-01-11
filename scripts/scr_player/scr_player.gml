@@ -46,19 +46,22 @@ function regenHeart(){
 	}
 }
 
-function levelOverScript(roomRef){
+function levelOverScript(controlRef){
 	if (point_distance(obj_player.x, obj_player.y, obj_player.origX, obj_player.origY) > 2){
 		move_towards_point(obj_player.origX, obj_player.origY, 6)
 	}
 	else{
 		obj_player.speed = 0
-		if(roomRef.alarm[1] == -1){
-			//start transition
-			roomRef.alarm[1] = 250
-			//
-			roomRef.alarm[3] = 30
+		if(controlRef.alarm[3] == -1){
+			controlRef.alarm[3] = 30
 		}
 		
 
+	}
+}
+
+function cancelAllAlarms(objRef){
+	for (var i = 0; i < 12; i++){
+		alarm[i] = -1
 	}
 }
