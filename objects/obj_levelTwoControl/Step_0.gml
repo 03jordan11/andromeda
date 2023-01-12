@@ -4,7 +4,7 @@
 //begin scripted action with drones
 if (alarm[1] == -1 && gameStart && !scriptDone) {
 	global.score = 0
-	alarm[1] = 60*30
+	alarm[1] = 60//60*30
 }
 
 //spawn group of drones every 3 seconds
@@ -20,7 +20,7 @@ if (alarm[2] == -1 && !droneTrigger && gameStart && spawnAsteroids){
 	alarm[2] = 160
 }
 
-if global.score >= 1{
+if global.score >= 25{
 	global.score = 0
 	audio_sound_gain(bkgSoundId, 0, 1200)
 	cancelAllAlarms(self)

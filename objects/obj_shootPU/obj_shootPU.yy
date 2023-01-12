@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_shootPU",
   "spriteId": {
-    "name": "spr_shootPU",
-    "path": "sprites/spr_shootPU/spr_shootPU.yy",
+    "name": "spr_attackPU",
+    "path": "sprites/spr_attackPU/spr_attackPU.yy",
   },
   "solid": false,
   "visible": true,

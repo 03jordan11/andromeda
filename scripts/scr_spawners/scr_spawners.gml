@@ -88,6 +88,8 @@ function spawnHorDrones(num){
 	
 	droneSpeed = irandom_range(3, 7)
 	for(var i = 0; i < num; i++){
+		temp = string("This is drone number {0}", i)
+		show_debug_message(temp)
 		instance_create_depth(xOrig + spacing*i, yOrig, -10000, obj_drone, {
 			horSpeed: droneSpeed,
 			spawnOrder: i,
