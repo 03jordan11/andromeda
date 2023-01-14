@@ -41,7 +41,7 @@ function spawnCircularDrones(){
 	ANGLE_VALUE = sqrt(2)/2
 	
 	radius = irandom_range(MIN_RADIUS, MAX_RADIUS)
-	xOrig = 960+64
+	xOrig = 960+128
 	yOrig = irandom_range(64+SPRITE_SIZE, 540 - MAX_RADIUS - SPRITE_SIZE)
 	
 	droneChar = 
@@ -63,6 +63,7 @@ function spawnCircularDrones(){
 	ob4.angle = (3*pi)/2
 	//if the radius is above the midpoint, spawn more in the circle
 	if (radius > MID_RADIUS){
+		//used to get the x and y coord for 45 degree angles
 		rad = ANGLE_VALUE * radius
 		ob5 = instance_create_depth(xOrig + rad, yOrig + rad, -10000, obj_drone, droneChar)
 		ob5.angle = pi/4
