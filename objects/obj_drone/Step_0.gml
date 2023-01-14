@@ -22,6 +22,10 @@ else if type == "dismiss drone"{
 }
 else if type == "circle"{
 	x -= horSpeed
+	x = xCenter + radius * cos(angle)
+	y = yCenter + radius * sin(angle)
+	angle += .01
+	xCenter -= horSpeed
 }
 else{
 	x -= horSpeed
