@@ -17,7 +17,7 @@ if chargeUp{
 	if(current_time > (timer + (1000*3))){
 		canMove = true
 		//Resets chargeUp to false in specified time
-		if alarm[0] = -1{
+		if alarm[0] == -1{
 			alarm[0] = 60 * 5
 		}
 	}
@@ -32,5 +32,8 @@ if distance < 10{
 		chargeUp = true
 		//start animation
 		timer = current_time
+		if alarm[1] == -1{
+			alarm[1] = 60
+		}
 	}
 }

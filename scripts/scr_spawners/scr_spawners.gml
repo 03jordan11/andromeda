@@ -182,3 +182,14 @@ function stopAsteroidsLvl1(){
 	obj_asteroidSpawner.alarm[0] = -1
 	obj_asteroidSpawner.gameStart = false
 }
+
+function bossAttack(xPos, yPos){
+	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: 0})
+	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: pi/4})
+	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: pi/2})
+	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: (3*pi)/4})
+	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: pi})
+	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: (5*pi)/4})
+	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: (3*pi)/2})
+	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: (7*pi)/4})
+}

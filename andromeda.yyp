@@ -40,6 +40,7 @@
     {"id":{"name":"obj_heart2","path":"objects/obj_heart2/obj_heart2.yy",},"order":10,},
     {"id":{"name":"scr_powerUp","path":"scripts/scr_powerUp/scr_powerUp.yy",},"order":3,},
     {"id":{"name":"spr_drone","path":"sprites/spr_drone/spr_drone.yy",},"order":6,},
+    {"id":{"name":"obj_bossBall","path":"objects/obj_bossBall/obj_bossBall.yy",},"order":6,},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"order":5,},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},"order":2,},
     {"id":{"name":"explosion","path":"sounds/explosion/explosion.yy",},"order":2,},
