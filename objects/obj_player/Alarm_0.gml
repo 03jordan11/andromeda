@@ -11,7 +11,9 @@ else{
 if counter == maxCounter{
 	image_alpha = 1
 	counter = 0
-	audio_stop_sound(global.powerUpSound)
+	if (global.powerUpSound != noone){
+		audio_stop_sound(global.powerUpSound)
+	}
 	isInvulnerable = false
 }
 

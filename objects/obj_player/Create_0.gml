@@ -1,4 +1,6 @@
 /// @description player initialization
+global.powerUpSound = noone
+
 
 horFlySpeed = 8;
 vertFlySpeed = 6;

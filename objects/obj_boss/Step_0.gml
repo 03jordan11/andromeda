@@ -41,6 +41,7 @@ if distance < 10{
 hitLaser = instance_place(x, y, obj_laser)
 if hitLaser != noone{
 	bossHealth--
+	audio_play_sound(bossHit, 1, false)
 	instance_destroy(hitLaser)
 	if bossHealth <= 0{
 		instance_destroy(self.id)
