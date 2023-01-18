@@ -37,3 +37,12 @@ if distance < 10{
 		}
 	}
 }
+
+hitLaser = instance_place(x, y, obj_laser)
+if hitLaser != noone{
+	bossHealth--
+	instance_destroy(hitLaser)
+	if bossHealth <= 0{
+		instance_destroy(self.id)
+	}
+}

@@ -4,7 +4,7 @@
 //begin scripted action with drones
 if (alarm[1] == -1 && gameStart && !scriptDone) {
 	global.score = 0
-	alarm[1] = 60//60*30
+	alarm[1] = 60*30
 }
 
 //spawn group of drones every 3 seconds

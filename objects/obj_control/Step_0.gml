@@ -1,5 +1,5 @@
 /// @description main game loop
-if global.score >= 1{
+if global.score >= 20{
 	audio_sound_gain(bkgSoundId, 0, 3000)
 	global.score = 0
 	stopAsteroidsLvl1()

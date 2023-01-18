@@ -43,6 +43,8 @@ asteroidCollision = instance_place(x, y, obj_asteroidM)
 droneCollision = instance_place(x, y, obj_drone)
 fighterCollision = instance_place(x, y, obj_fighter)
 shot = instance_place(x, y, obj_enemy_laser)
+bossCollision = instance_place(x, y, obj_boss)
+bossShot = instance_place(x, y, obj_bossBall)
 
 if !isInvulnerable{
 	if asteroidCollision {
@@ -58,6 +60,15 @@ if !isInvulnerable{
 	if shot {
 		takeDamage()
 		instance_destroy(shot.id)
+	}
+	if bossCollision{
+		takeDamage()
+		takeDamage()
+		takeDamage()
+	}
+	if bossShot{
+		takeDamage()
+		instance_destroy(bossShot.id)
 	}
 }else{
 	if alarm[0] == -1{

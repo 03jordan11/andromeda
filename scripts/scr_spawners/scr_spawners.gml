@@ -167,6 +167,12 @@ function spawnText(text, roomRef){
 				textToShow: text
 			})
 			instance_create_depth(736, 416, 0, obj_lvlFourArrow)				
+		}break;
+		case 5: {
+			instance_create_depth(244, 96, 1, obj_storyTextbox, {
+				textToShow: text
+			})
+			instance_create_depth(736, 416, 0, obj_lvlFiveArrow)				
 		}
 	}
 	
@@ -192,4 +198,10 @@ function bossAttack(xPos, yPos){
 	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: (5*pi)/4})
 	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: (3*pi)/2})
 	instance_create_depth(xPos, yPos, -10001, obj_bossBall, {angle: (7*pi)/4})
+}
+
+function spawnBoss(){
+	xPos = 1028
+	yPos = 250
+	instance_create_depth(xPos, yPos, -10001, obj_boss)
 }
