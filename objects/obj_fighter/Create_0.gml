@@ -2,9 +2,11 @@
 
 //in frames, 60 frames is 1 second
 randomize()
-timeBetweenShots = irandom_range(15, 50);
+waitTime = irandom_range(3, 5)
+timeBetweenShots = irandom_range(5, 15);
 fighterSpeed = irandom_range(3, 7)
+willAdvance = choose(true, false)
 
-
+counter = 0
 
 

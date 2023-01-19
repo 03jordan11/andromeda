@@ -1,2 +1,2 @@
 /// @description movement and collision
-x -= 10
+x -= 12
