@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "shootPU",
+  "name": "snd_shootPU",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "shootPU.mp3",
+  "soundFile": "snd_shootPU.mp3",
   "duration": 1.253875,
   "parent": {
     "name": "Sounds",
