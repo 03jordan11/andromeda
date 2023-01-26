@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto(rm_level_3)
+pause = false
+pauseSurf = -1
+pauseSurfBuffer = -1
 
+resW = 960
+resH = 540
 
 
 

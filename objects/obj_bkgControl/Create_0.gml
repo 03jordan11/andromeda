@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto(rm_level_5)
 
+near = layer_get_id("Background_Near")
+far = layer_get_id("Background_Far")
 
 
 

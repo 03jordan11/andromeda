@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto(rm_level_4)
 
 
-
+layer_x(far, far.x + 1)
+layer_x(near, near.x + 2)
 

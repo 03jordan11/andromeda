@@ -26,8 +26,8 @@ function transitionStart(roomTarget, typeOut, typeIn){
 }
 
 function transitionChangeRoom(){
-	//room_goto_next()
-	room_goto(global.roomTarget)
+	room_goto_next()
+	//room_goto(global.roomTarget)
 }
 
 function transitionFinished(){
