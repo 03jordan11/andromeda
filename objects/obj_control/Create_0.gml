@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-spawnText("You are the last human. Every other man and woman has uploaded thheir consciousness to the mega computer, Universe. Death had been a problem solved long ago, and only you have not tired of living.\n\nLooking for more adventure, you set your sights on the Andromeda galaxy, but it is going to take you a while to get there.", 1)
+spawnText("Captain's log 5882\n\nToday marks a momentous occasion, as I am the final embodiment of humanity. The rest of my kind have transcended flesh and blood, uploading their consciousness to Universe, the mega computer.\n\nBut before I join them in their digital paradise, I have decided to embark on one final journey; one of wonder and mystery, to the enigmatic and distant Andromeda galaxy.", 1)
