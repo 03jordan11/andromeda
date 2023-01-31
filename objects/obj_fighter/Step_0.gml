@@ -12,7 +12,7 @@ if alarm[0] == -1 && counter < waitTime {
 
 
 //x -= fighterSpeed
-if !willAdvance && (obj_player.x <= (x )){
+if !willAdvance && instance_exists(obj_player) && (obj_player.x <= (x )){
 	if !moving{
 		move_towards_point(obj_player.x + 100, obj_player.y, fighterSpeed)
 		}

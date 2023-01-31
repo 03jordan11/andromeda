@@ -1,5 +1,7 @@
 /// @description fighting player
-
+if !instance_exists(obj_player){
+	x += 8
+}else{
 //stay a certain distance away from the player at all times
 maxOffset = 300
 angle = point_direction(x, y, obj_player.x + maxOffset, obj_player.y)
@@ -46,4 +48,5 @@ if hitLaser != noone{
 	if bossHealth <= 0{
 		instance_destroy(self.id)
 	}
+}
 }
