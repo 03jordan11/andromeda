@@ -21,6 +21,7 @@ if (pause){
 if (keyboard_check_pressed(vk_escape)){
 	if (!pause){
 		pause = true
+		instance_create_depth(200, 200, -10200, obj_back)
 		instance_deactivate_all(true)
 		
 		pauseSurf = surface_create(resW, resH)
