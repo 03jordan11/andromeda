@@ -1,13 +1,25 @@
 /// @description player step
 if levelOver{
-	
-	if (point_distance(x, y, origX, origY) > 5){
-		move_towards_point(origX, origY, 6)
-	}
-	else{
-		speed = 0
-		if(self.currentControl.alarm[3] == -1){
-			self.currentControl.alarm[3] = 30
+	if(room == rm_level_5){
+		//move player to planet
+		//if (point_distance(x, y, planet.x, planet.y) > 5){
+		//	move_towards_point(planet.x, planet.y, 6)
+		//}else{
+			finalTransition()
+			room_goto_next()
+		//}
+	}else{
+		if (global.powerUpSound != noone){
+			audio_stop_sound(global.powerUpSound)
+		}
+		if (point_distance(x, y, origX, origY) > 5){
+			move_towards_point(origX, origY, 6)
+		}
+		else{
+			speed = 0
+			if(self.currentControl.alarm[3] == -1){
+				self.currentControl.alarm[3] = 30
+			}
 		}
 	}
 }

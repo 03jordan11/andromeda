@@ -42,3 +42,10 @@ function endRoomTransition(rmTarget){
 	layer_sequence_create("Instances", 0, 0, sq_FadeIn)
 	layer_reset_target_room()
 }
+
+function finalTransition(){
+	//move ship to planet
+	layer_set_target_room(rm_finalScene)
+	layer_sequence_create("Instances", 0, -100, sq_FadeIn)
+	layer_reset_target_room()
+}

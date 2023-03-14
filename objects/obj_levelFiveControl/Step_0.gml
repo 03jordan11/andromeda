@@ -21,4 +21,6 @@ if(alarm[2] == -1 && gameStart && !instance_exists(obj_boss)){
 if global.score >= 50{
 	global.score = 0
 	audio_sound_gain(bkgSoundId, 0, 1200)
+	obj_player.currentControl = obj_levelFiveControl
+	obj_player.levelOver = true
 }
