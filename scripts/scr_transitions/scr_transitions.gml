@@ -49,3 +49,8 @@ function finalTransition(){
 	layer_sequence_create("Instances", 0, -100, sq_FadeIn)
 	layer_reset_target_room()
 }
+
+//end of game screen
+function goToEnd(){
+	room_goto(rm_endScreen)
+}

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pauseControl",
+  "name": "obj_pauseControl57",
   "spriteId": null,
   "solid": false,
   "visible": true,

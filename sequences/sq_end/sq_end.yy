@@ -16,11 +16,25 @@
     "resourceType": "KeyframeStore<MessageEventKeyframe>",
   },
   "moments": {
-    "Keyframes": [],
+    "Keyframes": [
+      {"id":"b28f2275-751e-4a8a-a2df-f7e20a0189aa","Key":1894.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+              "goToEnd",
+            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
+    ],
     "resourceVersion": "1.0",
     "resourceType": "KeyframeStore<MomentsEventKeyframe>",
   },
   "tracks": [
+    {"resourceType":"GMAudioTrack","resourceVersion":"1.1","name":"fireplace","keyframes":{"Keyframes":[
+          {"id":"c02b1fb8-4f92-470a-9523-d2ff9318e566","Key":1175.0,"Length":776.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Mode":0,"Id":{"name":"fireplace","path":"sounds/fireplace/fireplace.yy",},"resourceVersion":"1.0","resourceType":"AudioKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AudioKeyframe>",},
+        ],"resourceVersion":"1.0","resourceType":"KeyframeStore<AudioKeyframe>",},"trackColour":4285067848,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[
+        {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"position","keyframes":{"Keyframes":[
+              {"id":"a38dd362-c935-4e53-b089-104a3e81af51","Key":1175.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":true,"Channels":{"0":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},"1":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<RealKeyframe>",},
+            ],"resourceVersion":"1.0","resourceType":"KeyframeStore<RealKeyframe>",},"trackColour":4285067848,"inheritsTrackColour":true,"builtinName":14,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":true,"modifiers":[],},
+        {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"rotation","keyframes":{"Keyframes":[
+              {"id":"25fdef09-ce3b-449d-881f-b4cee14873b6","Key":1175.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":true,"Channels":{"0":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<RealKeyframe>",},
+            ],"resourceVersion":"1.0","resourceType":"KeyframeStore<RealKeyframe>",},"trackColour":4285067848,"inheritsTrackColour":true,"builtinName":8,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":true,"modifiers":[],},
+      ],"events":[],"isCreationTrack":false,"modifiers":[],},
     {"resourceType":"GMAudioTrack","resourceVersion":"1.1","name":"night","keyframes":{"Keyframes":[
           {"id":"f5882571-79eb-4996-91cb-3977dd00cec7","Key":2.0,"Length":10804.32,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Mode":0,"Id":{"name":"night","path":"sounds/night/night.yy",},"resourceVersion":"1.0","resourceType":"AudioKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AudioKeyframe>",},
         ],"resourceVersion":"1.0","resourceType":"KeyframeStore<AudioKeyframe>",},"trackColour":4294068465,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[
