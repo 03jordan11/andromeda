@@ -15,8 +15,12 @@ if (alarm[1] == -1 && gameStart){
 }
 
 
-if global.score >= 40{
+if global.score >= 5{
 	global.score = 0
 	audio_sound_gain(bkgSoundId, 0, 1200)
-	room_goto_next()
+	gameStart = false
+	cancelAllAlarms(self)
+	destroyAllEnemies()
+	obj_player.currentControl = obj_levelFourControl
+	obj_player.levelOver = true
 }

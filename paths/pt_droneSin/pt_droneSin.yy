@@ -2,9 +2,12 @@
   "resourceType": "GMPath",
   "resourceVersion": "1.0",
   "name": "pt_droneSin",
-  "kind": 1,
-  "precision": 4,
   "closed": false,
+  "kind": 1,
+  "parent": {
+    "name": "Paths",
+    "path": "folders/Paths.yy",
+  },
   "points": [
     {"speed":100.0,"x":1024.0,"y":64.0,},
     {"speed":100.0,"x":960.0,"y":352.0,},
@@ -18,8 +21,5 @@
     {"speed":100.0,"x":64.0,"y":544.0,},
     {"speed":100.0,"x":-128.0,"y":64.0,},
   ],
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
-  },
+  "precision": 4,
 }

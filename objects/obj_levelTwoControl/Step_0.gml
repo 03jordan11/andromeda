@@ -20,7 +20,7 @@ if (alarm[2] == -1 && !droneTrigger && gameStart && spawnAsteroids){
 	alarm[2] = 160
 }
 
-if global.score >= 25{
+if global.score >= 35{
 	global.score = 0
 	audio_sound_gain(bkgSoundId, 0, 1200)
 	cancelAllAlarms(self)

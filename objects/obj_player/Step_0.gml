@@ -1,6 +1,9 @@
 /// @description player step
 if levelOver{
 	if(room == rm_level_5){
+		if (global.powerUpSound != noone){
+			audio_stop_sound(global.powerUpSound)
+		}
 		//move player to planet
 		//if (point_distance(x, y, planet.x, planet.y) > 5){
 		//	move_towards_point(planet.x, planet.y, 6)
@@ -25,10 +28,10 @@ if levelOver{
 }
 else if canMove{
 	//check keys for movement
-	moveRight = keyboard_check(ord("D"));
-	moveLeft = keyboard_check(ord("A"));
-	moveUp = keyboard_check(ord("W"));
-	moveDown = keyboard_check(ord("S"));
+	moveRight = moveRightInput();
+	moveLeft = moveLeftInput()
+	moveUp = moveUpInput()
+	moveDown = moveDownInput()
 
 	//calculate movement
 	vx = ((moveRight - moveLeft) * horFlySpeed);
@@ -96,4 +99,25 @@ if counter == maxCounter{
 		audio_stop_sound(global.powerUpSound)
 	}
 	isInvulnerable = false
+}
+
+if (shootAndContinueInput() && canShoot){
+	if shootTime == 0{
+		instance_create_depth(x, y, -10000, obj_laser)
+		shootTime = current_time
+	}
+
+	if shootPU{
+		if (current_time - shootTime) >= 200{
+			instance_create_depth(x, y, -10000, obj_laser)
+			shootTime = current_time
+		}
+	}
+	else{
+		if (current_time - shootTime) >= 500{
+			instance_create_depth(x, y, -10000, obj_laser)
+			shootTime = current_time
+		} 
+	}
+
 }
